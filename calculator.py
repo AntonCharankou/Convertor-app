@@ -51,7 +51,7 @@ c = dict(zip(order, (map(lambda x: float(x), input('Central point is ').split())
 fileName = input('Enter the name of the file: ')
 
 
-with open(fileName, 'r', encoding='utf-8') as fileInput:
+with open(fileName, encoding='utf-8') as fileInput:
     points = [dict(zip(order, map(lambda x: float(x), line.strip().split()))) for line in fileInput.readlines()]
 
 
